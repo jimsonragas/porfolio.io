@@ -7,13 +7,34 @@
     <meta property="og:title" content="Jimson | Civil Engineer">
     <meta property="og:description" content="Civil Engineer | Estimator | Planner">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jimsonragas.com">
+    <meta property="og:image" content="profile.jfif">
+    <meta name="theme-color" content="#2c3e50">
     
     <title>Jimson | Civil Engineer</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- JSON-LD Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jimson",
+        "jobTitle": "Civil Engineer",
+        "description": "Civil Engineer specializing in quantity takeoffs, estimation, and site supervision",
+        "email": "jimsond.ragas@gmail.com",
+        "telephone": "+63 953 257 0916",
+        "url": "https://jimsonragas.com"
+    }
+    </script>
 </head>
 
 <body>
+
+<!-- Skip Navigation Link for Accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- NAVBAR -->
 <header>
@@ -29,7 +50,7 @@
 </header>
 
 <!-- HERO -->
-<section class="hero" aria-label="Introduction">
+<section class="hero" aria-label="Introduction" id="main-content">
     <div class="hero-content">
         <h1>I am <span id="typing" aria-live="polite"></span></h1>
         <p>Civil Engineer | Estimator | Planner</p>
@@ -43,7 +64,10 @@
         <h2>About Me</h2>
         <article class="card">
             <img src="profile.jfif" alt="Jimson profile picture" class="profile">
-            <p>I am a civil engineer specializing in quantity takeoffs, estimation, and site supervision with strong attention to detail.</p>
+            <div class="about-content">
+                <p>I am a civil engineer specializing in <strong>quantity takeoffs</strong>, <strong>estimation</strong>, and <strong>site supervision</strong> with strong attention to detail. With expertise in construction planning and cost estimation, I help projects stay on schedule and within budget.</p>
+                <p>I'm proficient in industry-leading software and have successfully managed multiple construction projects from estimation through completion.</p>
+            </div>
         </article>
     </div>
 </section>
@@ -58,6 +82,9 @@
             <div class="card" role="listitem">Bluebeam</div>
             <div class="card" role="listitem">Excel</div>
             <div class="card" role="listitem">Primavera</div>
+            <div class="card" role="listitem">Quantity Takeoffs</div>
+            <div class="card" role="listitem">Cost Estimation</div>
+            <div class="card" role="listitem">Site Supervision</div>
         </div>
     </div>
 </section>
@@ -70,13 +97,15 @@
             <article class="card project" role="listitem">
                 <img src="project1.jpg" alt="Quantity Takeoff project using PlanSwift" loading="lazy">
                 <h3>Quantity Takeoff</h3>
-                <p>PlanSwift estimation project</p>
+                <p>PlanSwift estimation project demonstrating accurate material and labor quantification.</p>
+                <a href="#" class="project-link" aria-label="View Quantity Takeoff project details">View Project →</a>
             </article>
 
             <article class="card project" role="listitem">
                 <img src="project2.jpg" alt="Cost Estimation project in Excel" loading="lazy">
                 <h3>Cost Estimation</h3>
-                <p>Excel-based budgeting</p>
+                <p>Comprehensive Excel-based budgeting and cost analysis for construction projects.</p>
+                <a href="#" class="project-link" aria-label="View Cost Estimation project details">View Project →</a>
             </article>
         </div>
     </div>
@@ -87,14 +116,21 @@
     <div class="container">
         <h2>Contact</h2>
         <article class="card">
-            <p><a href="mailto:jimsond.ragas@gmail.com">Email: jimsond.ragas@gmail.com</a></p>
-            <p><a href="tel:+639532570916">Phone: +63 953 257 0916</a></p>
+            <div class="contact-info">
+                <p><a href="mailto:jimsond.ragas@gmail.com">📧 Email: jimsond.ragas@gmail.com</a></p>
+                <p><a href="tel:+639532570916">📞 Phone: +63 953 257 0916</a></p>
+            </div>
+            <div class="social-links">
+                <h3>Connect With Me</h3>
+                <a href="https://linkedin.com/in/jimsonragas" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">LinkedIn</a>
+                <a href="https://github.com/jimsonragas" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">GitHub</a>
+            </div>
         </article>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Jimson Portfolio</p>
+    <p>&copy; 2026 Jimson Portfolio. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
