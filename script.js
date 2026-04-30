@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
 
 // TYPING EFFECT
-const text = ["Jimson Ragas", "a Civil Engineer", "an Estimator"];
+const text = ["Jimson Ragas", "a Civil Engineer", "a Graphic Designer"];
 let i = 0;
 let j = 0;
 let currentText = "";
