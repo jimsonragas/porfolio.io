@@ -1,95 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jimson | Civil Engineer</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Portfolio of Jimson, a Civil Engineer specializing in quantity takeoffs, estimation, and site supervision.">
+    <meta property="og:title" content="Jimson | Civil Engineer">
+    <meta property="og:description" content="Civil Engineer | Estimator | Planner">
+    <meta property="og:type" content="website">
+    
+    <title>Jimson | Civil Engineer</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav>
-    <div class="logo">Jimson</div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+<header>
+    <nav>
+        <div class="logo">Jimson</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" aria-label="Introduction">
     <div class="hero-content">
-        <h1>I am <span id="typing"></span></h1>
+        <h1>I am <span id="typing" aria-live="polite"></span></h1>
         <p>Civil Engineer | Estimator | Planner</p>
-        <a href="CV.pdf" class="btn" download>Download CV</a>
+        <a href="CV.pdf" class="btn" download="Jimson_CV.pdf">Download CV</a>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="hidden">
-<div class="container">
-<h2>About Me</h2>
-<div class="card">
-<img src="profile.jfif" class="profile">
-<p>I am a civil engineer specializing in quantity takeoffs, estimation, and site supervision with strong attention to detail.</p>
-</div>
-</div>
+<section id="about" class="hidden" aria-label="About me">
+    <div class="container">
+        <h2>About Me</h2>
+        <article class="card">
+            <img src="profile.jfif" alt="Jimson profile picture" class="profile">
+            <p>I am a civil engineer specializing in quantity takeoffs, estimation, and site supervision with strong attention to detail.</p>
+        </article>
+    </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="hidden">
-<div class="container">
-<h2>Skills</h2>
-<div class="grid">
-<div class="card">AutoCAD</div>
-<div class="card">PlanSwift</div>
-<div class="card">Bluebeam</div>
-<div class="card">Excel</div>
-<div class="card">Primavera</div>
-</div>
-</div>
+<section id="skills" class="hidden" aria-label="Technical skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="grid" role="list">
+            <div class="card" role="listitem">AutoCAD</div>
+            <div class="card" role="listitem">PlanSwift</div>
+            <div class="card" role="listitem">Bluebeam</div>
+            <div class="card" role="listitem">Excel</div>
+            <div class="card" role="listitem">Primavera</div>
+        </div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="hidden">
-<div class="container">
-<h2>Projects</h2>
+<section id="projects" class="hidden" aria-label="Project portfolio">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="grid" role="list">
+            <article class="card project" role="listitem">
+                <img src="project1.jpg" alt="Quantity Takeoff project using PlanSwift" loading="lazy">
+                <h3>Quantity Takeoff</h3>
+                <p>PlanSwift estimation project</p>
+            </article>
 
-<div class="grid">
-
-<div class="card project">
-<img src="project1.jpg">
-<h3>Quantity Takeoff</h3>
-<p>PlanSwift estimation project</p>
-</div>
-
-<div class="card project">
-<img src="project2.jpg">
-<h3>Cost Estimation</h3>
-<p>Excel-based budgeting</p>
-</div>
-
-</div>
-</div>
+            <article class="card project" role="listitem">
+                <img src="project2.jpg" alt="Cost Estimation project in Excel" loading="lazy">
+                <h3>Cost Estimation</h3>
+                <p>Excel-based budgeting</p>
+            </article>
+        </div>
+    </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="hidden">
-<div class="container">
-<h2>Contact</h2>
-<div class="card">
-<p>Email: jimsond.ragas@gmail.com</p>
-<p>Phone: 09532570916</p>
-</div>
-</div>
+<section id="contact" class="hidden" aria-label="Contact information">
+    <div class="container">
+        <h2>Contact</h2>
+        <article class="card">
+            <p><a href="mailto:jimsond.ragas@gmail.com">Email: jimsond.ragas@gmail.com</a></p>
+            <p><a href="tel:+639532570916">Phone: +63 953 257 0916</a></p>
+        </article>
+    </div>
 </section>
 
 <footer>
-© 2026 Jimson Portfolio
+    <p>&copy; 2026 Jimson Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
